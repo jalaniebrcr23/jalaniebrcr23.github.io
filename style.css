@@ -277,7 +277,7 @@ h5 {
 }
 
 .contact-container .contactInfo {
-  width: 50%;
+  width: 25%;
   display: flex;
   flex-direction: column;
 }
@@ -302,7 +302,7 @@ h5 {
 
 .text {
   display: flex;
-  margin-left: 30vh;
+  margin-left: 5vh;
   font-size: 16px;
   flex-direction: column;
   font-weight: bold;
@@ -351,7 +351,7 @@ h5 {
 .contactForm .inputBox span {
   position: absolute;
   left: 0;
-  padding: 5px 0;
+  padding: 5px 5px;
   font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
@@ -376,6 +376,21 @@ h5 {
   padding: 10px;
   font-size: 18px;
   border-radius: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  height: 75px;
+  color: black;
+  font-size: medium;
 }
 
 @media screen and (max-width: 1075px) {
