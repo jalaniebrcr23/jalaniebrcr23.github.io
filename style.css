@@ -29,45 +29,59 @@ body {
   margin-bottom: 30px;
 }
 
-.logo {
+header {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 40px 20px 40px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+}
+
+header a#logo {
   display: inline-block;
   font-size: 30px;
-  float: left;
+  margin-left: 2vh;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
-ul.nav-links {
-  margin: 0;
-  float: right;
-  list-style: none;
+header .navigation {
   display: flex;
+  margin-right: 8vh;
 }
 
-li.nav-link {
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 20px;
-  font-weight: 300;
+.navigation a {
+  margin: 0 20px;
+  font-size: 22px;
 }
 
-.navbar a {
-  color: white;
-  cursor: pointer;
-  transition: all 0.3 ease;
-}
-
-.navbar a:hover {
+.navigation a:hover {
   color: black;
 }
 
 .content {
   display: flex;
-  width: 100%;
+  width: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
-  margin-top: 5vh;
-  display: inline-block;
+  margin-top: 20vh;
   padding: 20px;
+  width: 60%;
 }
 
 .main h2 {
@@ -77,6 +91,7 @@ li.nav-link {
 .main p {
   font-size: 35px;
   line-height: 40px;
+  width: 90%;
 }
 
 button {
@@ -108,6 +123,261 @@ button:hover {
   max-width: 500px;
 }
 
+#notes {
+  margin-top: 50vh;
+  height: 112vh;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.notepad-content h3 {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notepadtextinput {
+  font-size: 20px;
+  height: 100vh;
+  width: 90%;
+  border-radius: 8px;
+  resize: none;
+}
+
+#AboutSection {
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+
+.about-header {
+  border: none;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(
+    175deg,
+    rgba(227, 199, 226, 1) 35%,
+    rgba(125, 242, 235, 1) 100%
+  );
+  height: 20vh;
+}
+
+.about-descript {
+  border: none;
+  background: rgb(142, 235, 229);
+  background: linear-gradient(
+    175deg,
+    rgba(142, 235, 229, 1) 25%,
+    rgba(236, 206, 235, 1) 70%
+  );
+  height: 20vh;
+  align-content: center;
+  text-align: center;
+}
+
+.about-descript p {
+  padding: 10px 15px 10px 15px;
+  font-size: 20px;
+}
+
+h4 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+h5 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.about-content {
+  display: grid;
+  padding-top: 5vh;
+}
+
+.about-id {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+  height: 50vh;
+}
+
+.about-id .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding-top: 55px;
+}
+
+.about-id img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.about-id p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#contacts {
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-top: 5vh;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+#contacts .contact-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+#contacts .contact-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+#contacts .contact-content p {
+  font-weight: 300;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .contactInfo .box {
+  position: relative;
+  margin: 20px;
+  display: flex;
+}
+
+.contact-container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.text {
+  display: flex;
+  margin-left: 30vh;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.text h3 {
+  font-weight: 500;
+  display: contents;
+  color: palevioletred;
+}
+
+.text p {
+  font-size: medium;
+}
+
+.contactForm {
+  width: 25%;
+  padding: 40px;
+  background: #c2b0db;
+  border-radius: 20px;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="Submit"] {
+  width: 100px;
+  background: #e0c0ef;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
 @media screen and (max-width: 1075px) {
   .content {
     flex-direction: column;
@@ -115,11 +385,11 @@ button:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .logo {
-    font-size: 22px;
+  header #logo {
+    font-size: 5px;
   }
   li.nav-link {
-    font-size: 15px;
+    font-size: 5px;
   }
   .main h2 {
     font-size: 18px;
@@ -132,5 +402,18 @@ button:hover {
   }
   .image-wrapper img {
     max-width: 500px;
+  }
+
+  .notepadtextinput {
+    font-size: 10px;
+    height: 90vh;
+    width: 90%;
+    border-radius: 8px;
+  }
+  .notepad-content h3 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 7px;
   }
 }
